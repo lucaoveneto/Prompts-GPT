@@ -1,0 +1,58 @@
+Crie um código em Python para acompanhar e gerenciar uma carteira de criptomoedas com a seguinte estratégia de investimento: investir R$ 3.000 todo dia 10 de cada mês em três criptomoedas — Bitcoin (35%), Monero (35%) e Solana (30%). O código deve registrar e monitorar a evolução dos aportes mensais, considerando uma taxa de transação fixa de 0,2% sobre o valor comprado.
+
+Funcionalidades principais:
+Atualização diária automática:
+
+O sistema deve rodar automaticamente todos os dias às 21h (horário de Brasília).
+Obter automaticamente os preços das criptomoedas da API da Binance.
+Armazenar os dados de forma acumulativa em uma planilha Excel (.xlsx), armazenada localmente, sem sobrescrever registros anteriores.
+Acompanhamento de rentabilidade:
+
+Comparar o valor investido com o valor de mercado atual.
+Considerar taxas de transação fixas de 0,2% ao calcular a performance.
+Alertas de desvalorização:
+
+Notificar via e-mail (Gmail) caso uma criptomoeda caia mais de 20% em relação ao último topo pivô.
+Relatórios semanais enviados em formato PDF para o e-mail cadastrado.
+Gestão de saída e recompra:
+
+Quando um ativo romper a máxima histórica, vender automaticamente 50% da posição.
+Aplicar a seguinte estratégia de recompra escalonada:
+Recomprar 20% dos 50% vendidos após quedas de:
+10%
+15%
+20%
+30%
+50%
+Análises estatísticas:
+
+Calcular e registrar:
+Média móvel
+Desvio padrão
+Identificação dos melhores dias para aportes
+Identificação dos melhores aportes realizados
+Simulação de cenários futuros de aportes e crescimento da carteira.
+Visualização dos dados:
+
+Gerar gráficos automáticos em formato de linha para acompanhar:
+Rentabilidade acumulada
+Distribuição dos ativos
+Histórico de aportes
+Variações de preço ao longo do tempo
+Relatórios exportados em PDF.
+Exportação e persistência:
+
+Os dados devem ser armazenados em um arquivo Excel local, preservando o histórico.
+Gerar um relatório semanal em formato PDF via e-mail com o resumo dos aportes, valorização e estatísticas da carteira.
+Análise de risco:
+
+Avaliação do risco da carteira baseada em:
+Volatilidade histórica
+Correlação entre os ativos
+Risco de drawdown máximo (queda acumulada)
+Índice de Sharpe para avaliar a relação risco/retorno
+Controle fiscal:
+
+Cálculo de lucro tributável com base nas vendas de ativos.
+Cálculo do imposto de renda (IR) a pagar sobre os lucros, considerando a alíquota vigente para criptoativos.
+Relatório consolidado de imposto a pagar/exportação de dados fiscais.
